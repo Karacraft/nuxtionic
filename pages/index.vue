@@ -1,5 +1,5 @@
 <script setup>
-import Tabs from './tabs/tabs.vue'
+import Tabs from './tabs.vue'
 
 </script>
 

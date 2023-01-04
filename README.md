@@ -1,4 +1,8 @@
 # Nuxt 3 & Ionic Framework Basic Starter
+## Tab View
+ℹ️ **Note** that all pages in [./pages/tabs] are under one tag **ion-page** tag to navigate properly.  
+Still working on **Split Pane**
+
 
 Added Nuxt/Ionic Module
 Follow [Getting Started](https://ionic.nuxtjs.org/getting-started)  

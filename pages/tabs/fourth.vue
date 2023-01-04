@@ -1,8 +1,3 @@
-<script setup>
-definePageMeta({
-  alias: ['/', '/tabs']
-})
-</script>
 <template>
   <ion-page>
     <ion-header>
@@ -12,7 +7,7 @@ definePageMeta({
     </ion-header>
 
     <ion-content class="ion-padding">
-      <h1>Main Content</h1>
+      <h1>Fourth Tab</h1>
     </ion-content>
 
     <ion-footer>
