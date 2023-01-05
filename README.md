@@ -1,49 +1,53 @@
 # Nuxt 3 & Ionic Framework Basic Starter
 ## Tab View
-ℹ️ **Note** that all pages in [./pages/tabs] are under one tag **ion-page** tag to navigate properly.  
+==ℹ️ Note== that all pages in [./pages/tabs] are under one tag **ion-page** tag to navigate properly.  
 Still working on **Split Pane**
 
+__Updates__
+3 - Removed [./layouts] folder for now
+2 - Split Pane working correctly
+1 - Added application icon [/public/icon.png]
 
-Added Nuxt/Ionic Module
-Follow [Getting Started](https://ionic.nuxtjs.org/getting-started)  
-
-    npm install @nuxtjs/ionic -D
-
+Added [Nuxt/Ionic Module](https://ionic.nuxtjs.org/getting-started) 
+~~~js
+npm install @nuxtjs/ionic -D
+~~~
 Add it to nuxt config
-
-    [./nuxt.config.ts]
-     modules: ['@nuxtjs/ionic']
-
+~~~js
+[./nuxt.config.ts]
+modules: ['@nuxtjs/ionic']
+~~~
 Add default layout with ion-app & ion-router-outlet
+~~~js
+[./layouts/default.vue]
+<script setup>
+</script>
 
-    [./layouts/default.vue]
-    <script setup>
-    </script>
-
-    <template>
-        <ion-app>
-            <ion-router-outlet />
-        </ion-app>
-    </template>
-
+<template>
+    <ion-app>
+        <ion-router-outlet />
+    </ion-app>
+</template>
+~~~
 To Use ionic.css, add it to nuxt.config.js
+~~~js
+[./nuxt.config.js]
+css: ['~/assets/css/ionic.css'],
+    ionic:{
+    integrations:{
 
-    [./nuxt.config.js]
-    css: ['~/assets/css/ionic.css'],
-     ionic:{
-        integrations:{
+    },
+    css:{
+        core:true,
+        basic:true,
+        utilities:true
+    },
+    config:{
 
-        },
-        css:{
-            core:true,
-            basic:true,
-            utilities:true
-        },
-        config:{
-
-        }
     }
-
+}
+~~~
 Add eslint
-
-    npm init @eslint/config
+~~~js
+npm init @eslint/config
+~~~
